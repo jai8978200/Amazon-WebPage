@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Set background color and text color */
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: #232f3e;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    /* Main content styles */
+    main {
+      padding: 20px;
+    }
+    
+    /* Top bar menu styles */
+    .top-bar {
+      background-color: #ff9900;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .top-bar a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    
+    /* Search bar styles */
+    .search-bar {
+      margin: 20px auto;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+    
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #ff9900;
+      border: none;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    
+    /* Offers section styles */
+    .offers {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #232f3e;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    .offers p {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    
+    .offers span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    /* Add to cart button styles */
+    .add-to-cart {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #ff9900;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    /* Icon links styles */
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .icon-links a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      margin: 0 20px;
+    }
+    
+    .icon-links  img{
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    /* Products section styles */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .product-card {
+      width: 200px;
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .product-card h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    
+    .product-card p {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #232f3e;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .footer-buttons {
+      margin-top: 10px;
+    }
+    
+    .footer-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: #ff9900;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amazon</h1>
+  </header>
+  
+  <main>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    
+    <div class="offers">
+      <p>Special offer:</p>
+      <span id="countdown"></span>
+      <p>left!</p>
+    </div>
+    
+    <div class="icon-links">
+      <a href="#">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\mobile-png-10871-32x32.ico" alt="Mobiles &amp; Gadgets">
+        <span>Mobiles &amp; Gadgets</span>
+      </a>
+      <a href="#">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\laptop-png-laptop-notebook-png-image-image-6746-1153.png" alt="Laptops/PC">
+        <span>Laptops/PC</span>
+      </a>
+      <a href="#">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\special-offer-png-4456-32x32.ico" alt="Latest Offers">
+        <span>Latest Offers</span>
+      </a>
+      <a href="#">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\pngimg.com - headphones_PNG7655.png" alt="Headphones/Microphones">
+        <span>Headphones/Microphones</span>
+      </a>
+      <a href="#">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\pngimg.com - sandals_PNG9700.png" alt="Footwear">
+        <span>Footwear</span>
+      </a>
+    </div>
+    
+    <div class="products">
+      <div class="product-card">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\laptop-png-laptop-notebook-png-image-image-6746-1153.png" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Description of product 1</p>
+      </div>
+      <div class="product-card">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\pngimg.com - headphones_PNG7655.png" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Description of product 2</p>
+      </div>
+      <div class="product-card">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\mobile-png-10871-32x32.ico" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Description of product 3</p>
+      </div>
+      <div class="product-card">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\pngimg.com - sandals_PNG9700.png" alt="Product 4">
+        <h3>Product 4</h3>
+        <p>Description of product 4</p>
+      </div>
+      <div class="product-card">
+        <img src="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Images\pngimg.com - sandals_PNG9700.png" alt="Product 5">
+        <h3>Product 5</h3>
+        <p>Description of product 5</p>
+      </div>
+    </div>
+  </main>
+  
+  <button class="add-to-cart">Add to Cart</button>
+  
+  <footer>
+    <p>&copy; 2023 Amazon. All rights reserved.</p>
+    <div class="footer-buttons">
+      <a href="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\SignUp\Amazon Sign Up Page.html"><button>New to Amazon/Register</button></a>
+      <a href="D:\WEB TECH\Amazon Full Webpage For Demo\Main Web\Sign In\amazon Sign in.html"><button>Sign In</button></a>
+    </div>
+  </footer>
+  
+  <script>
+    // Countdown Timer
+    const countdownElement = document.getElementById('countdown');
+    
+    // Set the date and time for the offer expiration
+    const offerExpires = new Date('2023-05-30T23:59:59');
+    
+    function updateCountdown() {
+      const currentTime = new Date();
+      const timeLeft = offerExpires - currentTime;
+      
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      
+      // Display the countdown in the element
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      
+      // Check if the offer has expired
+      if (timeLeft < 0) {
+        countdownElement.innerHTML = 'Offer expired';
+      }
+    }
+    
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
